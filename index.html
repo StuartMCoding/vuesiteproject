@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>StuartTheCoder</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">{{name}}</h2>
+        <nav>
+            <ul class="nav_links">
+                <li v-for="link in links" :key="link.id">
+                    <a :href="link.url">{{link.name}}</a>
+                  </li>
+            </ul>
+        </nav>
+        <button>DarkMode</button>
+    </header>
+    <main class="main_content">
+        <div class="left">
+            <img src="stuart Malcolmson.jpg" alt="User" width="100">
+            <h4>{{fullname}}</h4>
+            <p>Web Developer</p>
+        </div>
+        <div class="right">
+            <div class="info">
+                <h3>Information</h3>
+                <div class="info_data">
+                    <div class="data">
+                        <h4>Github</h4>
+                        <p>/StuartMCoding</p>
+                    </div>
+                    <div class="data">
+                        <h4>Twitter</h4>
+                        <p>@StuTheCoder</p>
+                    </div>
+                </div>
+            </div>
+            <div class="journey">
+                <h3>Journey</h3>
+                <div class="journey_data">
+                    <div class="data">
+                        <h4>Blog</h4>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                    <div class="data">
+                        <h4>Projects</h4>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social_media">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="script.js"></script>
+</body>
+</html>
